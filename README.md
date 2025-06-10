@@ -1,6 +1,16 @@
 # ENGR103-Game
 Final Project game on the Adafruit Circuit Playground Express for ENGR103
-Intended to be a rhythm game that uses both buttons as inputs, and outputs with the lights and the Serial Monitor.
+A rhythm game that uses both buttons as inputs, and outputs with the lights and the Serial Monitor.
+
+This game is a rhythm game, with the goal of achieving the highest score possible!
+There are 12 rounds of 8 patterns for a total of 96 patterns. Each round is 15% faster than the last, so be careful!
+There are 3 possible patterns: a right button press is indicated by red light, a left button press by blue lights, and both simultaneously by green and yellow lights. In every case, the goal is to press on the 8th beat (when the light closest to the corresponding button turns on).
+
+You will be scored depending on your reaction time! 25 ms is considered perfect and awards a score of 100, 50 ms awards 50, 75 ms awards 20, 100 ms awards 5, and anything more than 100 ms is considered a miss. If you press the wrong button (for both buttons, a difference in time of more than 50 ms is considered a miss), you will lose 100 points, so be careful!
+
+As you play, the serial monitor will tell if you are fast or slow.
+
+At the end of the game, you will see your total score out of 9600 and a total rating! Shoot for perfect!
 
 The game is comprised of 12 functions:
 
