@@ -251,7 +251,7 @@ void EndofGame(){                                          //function that displ
   Serial.println(" ");
   Serial.print("Misses:   ");
   delay(TDelay);
-  Serial.print(TotalMisses);
+  Serial.print(-TotalMisses);
   delay(TDelay);
   Serial.println(" ");
   Serial.println(" ");
